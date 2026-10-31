@@ -1,0 +1,114 @@
+#!/bin/sh
+# Native Bluetooth customer wrapper 1.0.6.
+# The vendor process keeps this PID and maps a separate flat object per start.
+[ -z "${GAL_NATIVE_BT+x}" ] || unset GAL_NATIVE_BT
+L=/fs/sdb0/lsd-extender/libgal_btshim.so
+D=/dev/shmem
+R=$D/gal-btshim.$$.so
+OWN_RAM=0
+
+ram_name() {
+    case "$1" in "$D"/gal-btshim.*.so) ;; *) return 1 ;; esac
+    NUMBER=${1#"$D"/gal-btshim.}
+    NUMBER=${NUMBER%.so}
+    case "$NUMBER" in ''|0*|*[!0-9]*) return 1 ;; esac
+}
+
+# Remove only the card, previous fixed path and exact numeric RAM names from
+# inherited preload entries. Preserve unrelated entries, empty fields and order.
+if [ -n "${LD_PRELOAD+x}" ]; then
+    REST=$LD_PRELOAD
+    BASE=
+    HAVE=0
+    while :; do
+        case "$REST" in
+            *:*) ENTRY=${REST%%:*}; REST=${REST#*:}; MORE=1 ;;
+            *) ENTRY=$REST; MORE=0 ;;
+        esac
+        if [ "$ENTRY" = "$L" ] || [ "$ENTRY" = "$D/gal-btshim/libgal_btshim.so" ] || ram_name "$ENTRY"; then
+            :
+        else
+            if [ "$HAVE" = 1 ]; then BASE=$BASE:$ENTRY; else BASE=$ENTRY; HAVE=1; fi
+        fi
+        [ "$MORE" = 1 ] || break
+    done
+    LD_PRELOAD=$BASE
+    export LD_PRELOAD
+fi
+
+card_readable() { [ -f "$L" ] && [ -r "$L" ] && [ ! -L "$L" ]; }
+POLLS=0
+DECISION=card-timeout
+wait_for_card() {
+    while [ "$POLLS" -lt 30 ]; do
+        POLLS=$((POLLS + 1))
+        if card_readable; then return 0; fi
+        [ "$POLLS" -lt 30 ] || return 1
+        /bin/sleep 1 || { DECISION=sleep-failed; return 1; }
+    done
+    return 1
+}
+
+retire_ram() {
+    [ -d "$D" ] && [ ! -L "$D" ] || return 1
+    # Validate the complete namespace before the first unlink. The prefix is
+    # reserved for this wrapper; malformed names and all links refuse cleanup.
+    for OLD in "$D"/gal-btshim.*.so; do
+        [ -e "$OLD" ] || [ -L "$OLD" ] || continue
+        ram_name "$OLD" && [ -f "$OLD" ] && [ ! -L "$OLD" ] || return 1
+    done
+    for OLD in "$D"/gal-btshim.*.so; do
+        [ -e "$OLD" ] || [ -L "$OLD" ] || continue
+        ram_name "$OLD" && [ -f "$OLD" ] && [ ! -L "$OLD" ] || return 1
+        /bin/rm "$OLD" || return 1
+    done
+}
+
+ram_copy() {
+    card_readable && retire_ram || return 1
+    # Exclusive creation refuses a collision or a link introduced after cleanup.
+    (set -C; : > "$R") 2>/dev/null || return 1
+    OWN_RAM=1
+    [ -f "$R" ] && [ ! -L "$R" ] || return 1
+    /bin/cp "$L" "$R" 2>/dev/null || return 1
+    [ -f "$R" ] && [ -r "$R" ] && [ -s "$R" ] && [ ! -L "$R" ] || return 1
+    /bin/chmod 0755 "$R" || return 1
+}
+
+GAL_BTSHIM_PRELOAD=unreadable
+if wait_for_card; then
+    DECISION=ram-copy-failed
+    if ram_copy; then
+        C=${LD_PRELOAD:+$LD_PRELOAD:}$R
+        if LD_PRELOAD="$C" /bin/ls -d / >/dev/null 2>&1; then
+            GAL_BTSHIM_PRELOAD=loaded
+            DECISION=loaded
+        else
+            GAL_BTSHIM_PRELOAD=unloadable
+            DECISION=load-failed
+        fi
+    fi
+fi
+if [ "$GAL_BTSHIM_PRELOAD" != loaded ] && [ "$OWN_RAM" = 1 ]; then
+    if [ -f "$R" ] && [ ! -L "$R" ]; then
+        /bin/rm "$R" || DECISION=ram-cleanup-failed
+    else
+        DECISION=ram-cleanup-failed
+    fi
+fi
+export GAL_BTSHIM_PRELOAD
+P=/ramdisk/pps/aawg
+/bin/mkdir -p "$P" 2>/dev/null || :
+(echo "preload::$GAL_BTSHIM_PRELOAD
+wrapper::1.0.6
+polls::$POLLS
+decision::$DECISION
+ram_library::$R" > "$P/btstack_wrapper") 2>/dev/null || :
+/eso/bin/slogprint "native-aa-btstack-wrapper version=1.0.6 decision=$DECISION polls=$POLLS preload=$GAL_BTSHIM_PRELOAD ram_library=$R" 2>/dev/null || :
+# All helpers finish before native activation. The final exec keeps $$ unchanged.
+if [ "$GAL_BTSHIM_PRELOAD" = loaded ]; then
+    LD_PRELOAD=$C
+    GAL_NATIVE_BT=1
+    export LD_PRELOAD GAL_NATIVE_BT
+fi
+exec /eso/bin/apps/btstack "$@"

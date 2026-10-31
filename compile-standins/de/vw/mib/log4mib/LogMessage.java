@@ -1,0 +1,8 @@
+/* Copyright (C) 2026 korhojoa */
+// SPDX-License-Identifier: GPL-3.0-only
+// Compile-only declaration. Do not install this class.
+package de.vw.mib.log4mib;
+public interface LogMessage {
+ public de.vw.mib.log4mib.LogMessage append(java.lang.String arg0);
+ public void log();
+}

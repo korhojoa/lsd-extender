@@ -1,0 +1,4596 @@
+[
+  {
+    "name": "de/vw/mib/Disposable",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/animation/control/AnimatedPropertiesAccessor",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/animation/control/AnimationListener",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/animation/easing/EasingParams",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "clone",
+        "descriptor": "()Ljava/lang/Object;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/app/desktop/ContentManager",
+    "members": [
+      {
+        "name": "updateContent",
+        "descriptor": "(Ljava/lang/String;Ljava/lang/String;)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/app/framework/AppDefinition",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/appui/cio/CioVisualizationRegister",
+    "members": [
+      {
+        "name": "registerRelayService",
+        "descriptor": "(Ljava/lang/String;Ljava/lang/String;Lde/vw/mib/cio/framework/CioVisualizationService;)V"
+      },
+      {
+        "name": "unregisterRelayService",
+        "descriptor": "(Ljava/lang/String;Ljava/lang/String;)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/ASLPropertyManager",
+    "members": [
+      {
+        "name": "valueChangedBoolean",
+        "descriptor": "(IZ)V"
+      },
+      {
+        "name": "valueChangedInteger",
+        "descriptor": "(II)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/api/devicehandling/ASLDeviceHandlingAPI",
+    "members": [
+      {
+        "name": "getDevices",
+        "descriptor": "()Lde/vw/mib/asl/api/devicehandling/Devices;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/api/devicehandling/ASLDeviceHandlingFactory",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "getDeviceHandlingApi",
+        "descriptor": "()Lde/vw/mib/asl/api/devicehandling/ASLDeviceHandlingAPI;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/api/devicehandling/Device",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "(I)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/api/devicehandling/Devices",
+    "members": [
+      {
+        "name": "getBySourceId",
+        "descriptor": "(Lde/vw/mib/asl/api/media/services/sources/SourceId;)Lde/vw/mib/asl/api/devicehandling/Device;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/api/devicehandling/Medium",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "(Lde/vw/mib/asl/api/devicehandling/Device;I)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/api/devicehandling/clients/MediaListObserver",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/asl/api/media/services/ResultCode",
+    "members": [
+      {
+        "name": "NOK",
+        "descriptor": "Lde/vw/mib/asl/api/media/services/ResultCode;"
+      },
+      {
+        "name": "OK",
+        "descriptor": "Lde/vw/mib/asl/api/media/services/ResultCode;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/api/media/services/SourceCallback",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/asl/api/media/services/browser/MediaBrowserService",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/asl/api/media/services/player/MediaPlayerService",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/asl/api/media/services/sources/SourceId",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "(II)V"
+      },
+      {
+        "name": "isEqual",
+        "descriptor": "(Lde/vw/mib/asl/api/media/services/sources/SourceId;Lde/vw/mib/asl/api/media/services/sources/SourceId;)Z"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/api/media/services/sources/current/CurrentMediaSourceListener",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/asl/api/media/services/sources/current/CurrentMediaSourceService",
+    "members": [
+      {
+        "name": "registerListener",
+        "descriptor": "(Lde/vw/mib/asl/api/media/services/sources/current/CurrentMediaSourceListener;)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/api/media/services/sources/medialist/Source",
+    "members": [
+      {
+        "name": "getSourceId",
+        "descriptor": "()Lde/vw/mib/asl/api/media/services/sources/SourceId;"
+      },
+      {
+        "name": "isPlaying",
+        "descriptor": "()Z"
+      },
+      {
+        "name": "isPlayable",
+        "descriptor": "()Z"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/api/navbap/ASLNavBAPAPI",
+    "members": [
+      {
+        "name": "updateBapDistanceToNextManeuver",
+        "descriptor": "(IIZI)V"
+      },
+      {
+        "name": "updateBapTurnToInfo",
+        "descriptor": "(Ljava/lang/String;Ljava/lang/String;)V"
+      },
+      {
+        "name": "updateBapLaneGuidance",
+        "descriptor": "([Lde/vw/mib/asl/api/navbap/INavLaneGuidanceDataNavBap;Z)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/api/navbap/ASLNavBAPFactory",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "getNavBAPApi",
+        "descriptor": "()Lde/vw/mib/asl/api/navbap/ASLNavBAPAPI;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/api/navbap/INavLaneGuidanceDataNavBap",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/asl/api/navigation/ASLNavigationAPI",
+    "members": [
+      {
+        "name": "getASLNavigationServices",
+        "descriptor": "(Lde/vw/mib/asl/api/navigation/ASLNavigationServicesListener;)Lde/vw/mib/asl/api/navigation/ASLNavigationServices;"
+      },
+      {
+        "name": "getNavigationGuidanceService",
+        "descriptor": "(Lde/vw/mib/asl/api/navigation/guidance/NavigationGuidanceListener;)Lde/vw/mib/asl/api/navigation/guidance/NavigationGuidanceService;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/api/navigation/ASLNavigationFactory",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "getNavigationApi",
+        "descriptor": "()Lde/vw/mib/asl/api/navigation/ASLNavigationAPI;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/api/navigation/ASLNavigationServices",
+    "members": [
+      {
+        "name": "isServiceAvailable",
+        "descriptor": "()Z"
+      },
+      {
+        "name": "startGuidance",
+        "descriptor": "([Lde/vw/mib/asl/api/navigation/NavAddress;ZI)I"
+      },
+      {
+        "name": "getGuidanceInfo",
+        "descriptor": "()[Lde/vw/mib/asl/api/navigation/GuidanceInfo;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/api/navigation/ASLNavigationServicesListener",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/asl/api/navigation/GuidanceInfo",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "(Lde/vw/mib/asl/api/navigation/NavAddress;IIIJ)V"
+      },
+      {
+        "name": "getAddress",
+        "descriptor": "()Lde/vw/mib/asl/api/navigation/NavAddress;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/api/navigation/NavAddress",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "getLatitude",
+        "descriptor": "()I"
+      },
+      {
+        "name": "getLongitude",
+        "descriptor": "()I"
+      },
+      {
+        "name": "getStreet",
+        "descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "getCity",
+        "descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "getCountry",
+        "descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "getHousenumber",
+        "descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "getZip",
+        "descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "getState",
+        "descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "setStreet",
+        "descriptor": "(Ljava/lang/String;)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/api/navigation/NavigationServiceException",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/api/navigation/guidance/NavigationGuidanceListener",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/asl/api/navigation/guidance/NavigationGuidanceService",
+    "members": [
+      {
+        "name": "getCalculationStates",
+        "descriptor": "()[I"
+      },
+      {
+        "name": "getGuidanceState",
+        "descriptor": "()I"
+      },
+      {
+        "name": "isRgActive",
+        "descriptor": "()Z"
+      },
+      {
+        "name": "freeService",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/api/system/ASLSystemKeyPanelHandling",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/asl/api/system/factoryreset/FactoryResetParticipant",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/asl/framework/api/dsiproxy/DSIProxy",
+    "members": [
+      {
+        "name": "getService",
+        "descriptor": "(Lde/vw/mib/genericevents/Target;Ljava/lang/Class;)Lorg/dsi/ifc/base/DSIBase;"
+      },
+      {
+        "name": "getService",
+        "descriptor": "(Lde/vw/mib/genericevents/Target;Ljava/lang/Class;I)Lorg/dsi/ifc/base/DSIBase;"
+      },
+      {
+        "name": "addResponseListener",
+        "descriptor": "(Lde/vw/mib/genericevents/Target;Ljava/lang/Class;Lorg/dsi/ifc/base/DSIListener;)V"
+      },
+      {
+        "name": "addResponseListener",
+        "descriptor": "(Lde/vw/mib/genericevents/Target;Ljava/lang/Class;ILorg/dsi/ifc/base/DSIListener;)V"
+      },
+      {
+        "name": "removeResponseListener",
+        "descriptor": "(Lde/vw/mib/genericevents/Target;Ljava/lang/Class;Lorg/dsi/ifc/base/DSIListener;)V"
+      },
+      {
+        "name": "removeResponseListener",
+        "descriptor": "(Lde/vw/mib/genericevents/Target;Ljava/lang/Class;ILorg/dsi/ifc/base/DSIListener;)V"
+      },
+      {
+        "name": "addServiceStateListener",
+        "descriptor": "(Ljava/lang/Class;Lde/vw/mib/asl/framework/api/dsiproxy/DSIServiceStateListener;)V"
+      },
+      {
+        "name": "addServiceStateListener",
+        "descriptor": "(Ljava/lang/Class;ILde/vw/mib/asl/framework/api/dsiproxy/DSIServiceStateListener;)V"
+      },
+      {
+        "name": "removeServiceStateListener",
+        "descriptor": "(Ljava/lang/Class;Lde/vw/mib/asl/framework/api/dsiproxy/DSIServiceStateListener;)V"
+      },
+      {
+        "name": "removeServiceStateListener",
+        "descriptor": "(Ljava/lang/Class;ILde/vw/mib/asl/framework/api/dsiproxy/DSIServiceStateListener;)V"
+      },
+      {
+        "name": "addServiceInterceptor",
+        "descriptor": "(Ljava/lang/Class;Lde/vw/mib/asl/framework/api/dsiproxy/DSIProxyInterceptor;)V"
+      },
+      {
+        "name": "removeServiceInterceptor",
+        "descriptor": "(Ljava/lang/Class;Lde/vw/mib/asl/framework/api/dsiproxy/DSIProxyInterceptor;)V"
+      },
+      {
+        "name": "addListenerInterceptor",
+        "descriptor": "(Ljava/lang/Class;Lde/vw/mib/asl/framework/api/dsiproxy/DSIProxyInterceptor;)V"
+      },
+      {
+        "name": "addListenerInterceptor",
+        "descriptor": "(Ljava/lang/Class;ILde/vw/mib/asl/framework/api/dsiproxy/DSIProxyInterceptor;)V"
+      },
+      {
+        "name": "removeListenerInterceptor",
+        "descriptor": "(Ljava/lang/Class;Lde/vw/mib/asl/framework/api/dsiproxy/DSIProxyInterceptor;)V"
+      },
+      {
+        "name": "removeListenerInterceptor",
+        "descriptor": "(Ljava/lang/Class;ILde/vw/mib/asl/framework/api/dsiproxy/DSIProxyInterceptor;)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/framework/api/dsiproxy/DSIProxyAPI",
+    "members": [
+      {
+        "name": "getDSIProxy",
+        "descriptor": "()Lde/vw/mib/asl/framework/api/dsiproxy/DSIProxy;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/framework/api/dsiproxy/DSIProxyFactory",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "getDSIProxyAPI",
+        "descriptor": "()Lde/vw/mib/asl/framework/api/dsiproxy/DSIProxyAPI;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/framework/api/dsiproxy/DSIProxyInterceptor",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/asl/framework/api/dsiproxy/DSIServiceStateListener",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/asl/framework/api/entertainmentmanager/ASLEntertainmentmanagerAPI",
+    "members": [
+      {
+        "name": "getCurrentContext",
+        "descriptor": "()I"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/framework/api/entertainmentmanager/ASLEntertainmentmanagerFactory",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "getEntertainmentmanagerApi",
+        "descriptor": "()Lde/vw/mib/asl/framework/api/entertainmentmanager/ASLEntertainmentmanagerAPI;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/framework/api/entertainmentmanager/EntertainmentManagerService",
+    "members": [
+      {
+        "name": "requestContext",
+        "descriptor": "(I)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/framework/api/framework/ASLFactoryBase",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/framework/api/framework/ASLFrameworkAPI",
+    "members": [
+      {
+        "name": "getServices",
+        "descriptor": "()Lde/vw/mib/asl/framework/api/framework/Services;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/framework/api/framework/ASLFrameworkFactory",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "getASLFrameworkAPI",
+        "descriptor": "()Lde/vw/mib/asl/framework/api/framework/ASLFrameworkAPI;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/framework/api/framework/Services",
+    "members": [
+      {
+        "name": "getASLComponentRegistry",
+        "descriptor": "()Lde/vw/mib/asl/framework/api/framework/component/ASLComponentRegistry;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/framework/api/framework/component/ASLComponentRegistry",
+    "members": [
+      {
+        "name": "getAPIInstance",
+        "descriptor": "(Ljava/lang/Class;)Ljava/lang/Object;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/framework/api/persistence/AbstractSharedPersistable",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "(IJ)V"
+      },
+      {
+        "name": "getKey",
+        "descriptor": "()J"
+      },
+      {
+        "name": "getNamespace",
+        "descriptor": "()I"
+      },
+      {
+        "name": "markDirty",
+        "descriptor": "(Z)V"
+      },
+      {
+        "name": "fromStream",
+        "descriptor": "(Lde/vw/mib/asl/framework/api/persistence/PersistenceInputStream;)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/framework/api/persistence/Persistable",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/asl/framework/api/persistence/PersistenceInputStream",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/asl/framework/api/persistence/SharedPersistable",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/asl/framework/api/persistence/VersionedPersistable",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/asl/framework/api/startupv7r/StartupServiceManagerConstants",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/asl/framework/internal/framework/AbstractASLTarget",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "(Lde/vw/mib/genericevents/GenericEvents;I)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/framework/internal/framework/GenericCollector",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "setStringItem",
+        "descriptor": "(ILjava/lang/String;)V"
+      },
+      {
+        "name": "setIntItem",
+        "descriptor": "(II)V"
+      },
+      {
+        "name": "getIntItem",
+        "descriptor": "(I)I"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/framework/internal/framework/ServiceManager",
+    "members": [
+      {
+        "name": "timerManager",
+        "descriptor": "Lde/vw/mib/timer/TimerManager;"
+      },
+      {
+        "name": "eventMain",
+        "descriptor": "Lde/vw/mib/genericevents/GenericEvents;"
+      },
+      {
+        "name": "mGenericEventFactory",
+        "descriptor": "Lde/vw/mib/genericevents/EventFactory;"
+      },
+      {
+        "name": "reflectionFactory",
+        "descriptor": "Lde/vw/mib/asl/framework/internal/framework/reflection/ContainerReflectionFactory;"
+      },
+      {
+        "name": "aslPropertyManager",
+        "descriptor": "Lde/vw/mib/asl/ASLPropertyManager;"
+      },
+      {
+        "name": "bundleContext",
+        "descriptor": "Lorg/osgi/framework/BundleContext;"
+      },
+      {
+        "name": "aslThreadSwitch",
+        "descriptor": "Lde/vw/mib/genericevents/ThreadSwitchingTarget;"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/framework/internal/framework/dsi/util/Utils",
+    "members": [
+      {
+        "name": "getRuntimeListenerMethodName",
+        "descriptor": "(II)Ljava/lang/String;"
+      },
+      {
+        "name": "getTypeIndex",
+        "descriptor": "(Ljava/lang/Class;)I"
+      },
+      {
+        "name": "getTypeIndex",
+        "descriptor": "(Ljava/lang/String;)I"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/framework/internal/framework/reflection/ContainerReflectionFactory",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "(Lde/vw/mib/asl/framework/internal/framework/reflection/dsi/DSIReflectionFactory;)V"
+      },
+      {
+        "name": "getServicesMmao",
+        "descriptor": "(I)Lde/vw/mib/reflection/MultipleMethodAccessibleObject;"
+      },
+      {
+        "name": "getListenersMmao",
+        "descriptor": "(I)Lde/vw/mib/reflection/MultipleMethodAccessibleObject;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/framework/internal/framework/reflection/dsi/DSIReflectionConfiguration",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "(Ljava/lang/String;)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/framework/internal/framework/reflection/dsi/DSIReflectionFactory",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "(Lde/vw/mib/asl/framework/internal/framework/reflection/dsi/DSIReflectionConfiguration;)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/framework/internal/startupv7r/StartupServiceManager",
+    "members": [
+      {
+        "name": "startupDone",
+        "descriptor": "Z"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/internal/homescreen/HomeScreenServices",
+    "members": [
+      {
+        "name": "getTiles",
+        "descriptor": "()[Lde/vw/mib/asl/internal/impl/homescreen/model/Tile;"
+      },
+      {
+        "name": "getTileInstaller",
+        "descriptor": "()Lde/vw/mib/asl/internal/impl/homescreen/tileselection/TileInstaller;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/internal/impl/homescreen/HomeScreenServicesProvider",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/internal/impl/homescreen/model/Tile",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "(Ljava/lang/String;II)V"
+      },
+      {
+        "name": "getScreenArea",
+        "descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "getApp",
+        "descriptor": "()Lde/vw/mib/cio/CioIntent;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/internal/impl/homescreen/tileselection/TileInstaller",
+    "members": [
+      {
+        "name": "installTile",
+        "descriptor": "(Lde/vw/mib/asl/internal/impl/homescreen/model/Tile;Lde/vw/mib/cio/CioIntent;)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/internal/list/ASLCachedWindowList",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/asl/internal/list/ASLList",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/asl/internal/list/ASLListDataUpdateRegistry",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/asl/internal/list/ASLListStringIndexed",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/asl/internal/list/ASLListUpdates",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/asl/internal/list/ASLListView",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/asl/internal/list/ItemTransformer",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/asl/internal/list/impl/AbstractASLList",
+    "members": [
+      {
+        "name": "LOG_PREFIX",
+        "descriptor": "Ljava/lang/String;"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "(Lde/vw/mib/asl/internal/list/impl/Services;Lde/vw/mib/asl/internal/list/ItemTransformer;ILjava/lang/String;Ljava/lang/String;)V"
+      },
+      {
+        "name": "updateList",
+        "descriptor": "([Ljava/lang/Object;)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/internal/list/impl/GenericASLList",
+    "members": [
+      {
+        "name": "LOG_PREFIX",
+        "descriptor": "Ljava/lang/String;"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "(Lde/vw/mib/asl/internal/list/impl/Services;Lde/vw/mib/asl/internal/list/ItemTransformer;ILjava/lang/String;Ljava/lang/String;)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/internal/list/impl/Services",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/asl/internal/media/accessor/MediaObjectAccessor",
+    "members": [
+      {
+        "name": "mMediaController",
+        "descriptor": "Lde/vw/mib/asl/internal/media/controller/MediaController;"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "getAudioManager",
+        "descriptor": "()Lde/vw/mib/asl/internal/media/sound/MediaAudioManager;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/internal/media/common/AbstractComponent",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "(Lde/vw/mib/genericevents/GenericEvents;Ljava/lang/String;)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/internal/media/common/AbstractMediaTarget",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "(Lde/vw/mib/genericevents/GenericEvents;Ljava/lang/String;)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/internal/media/common/ResponseHandler",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/internal/media/controller/MediaComponents",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "getSources",
+        "descriptor": "()Lde/vw/mib/asl/internal/media/sourcehandling/target/ISources;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/internal/media/controller/MediaController",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "(Lde/vw/mib/genericevents/GenericEvents;Ljava/lang/String;)V"
+      },
+      {
+        "name": "addCommand",
+        "descriptor": "(Lde/vw/mib/asl/internal/media/controller/commands/Command;)V"
+      },
+      {
+        "name": "activateMediaSource",
+        "descriptor": "(Lde/vw/mib/asl/api/media/services/sources/SourceId;Lde/vw/mib/asl/api/media/services/SourceCallback;)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/internal/media/controller/commands/AbstractCommand",
+    "members": [
+      {
+        "name": "NEXT_STEP",
+        "descriptor": "Lde/vw/mib/asl/internal/media/common/ResponseHandler;"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "(IIII)V"
+      },
+      {
+        "name": "setCommandCallback",
+        "descriptor": "(Lde/vw/mib/asl/internal/media/controller/commands/CommandCallback;)V"
+      },
+      {
+        "name": "isCompleted",
+        "descriptor": "()Z"
+      },
+      {
+        "name": "isTerminated",
+        "descriptor": "()Z"
+      },
+      {
+        "name": "abort",
+        "descriptor": "(Ljava/lang/String;)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/internal/media/controller/commands/Command",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/asl/internal/media/controller/commands/CommandCallback",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/asl/internal/media/controller/commands/CommandState",
+    "members": [
+      {
+        "name": "isCompleted",
+        "descriptor": "()Z"
+      },
+      {
+        "name": "isTerminated",
+        "descriptor": "()Z"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/internal/media/controller/commands/playback/CmdActivateSource",
+    "members": [
+      {
+        "name": "TIMEOUT",
+        "descriptor": "I"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "(Lde/vw/mib/asl/internal/media/controller/MediaComponents;Lde/vw/mib/asl/internal/media/sourcehandling/state/MediaCollector;ZZ)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/internal/media/sound/MediaAudioManager",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "(Lde/vw/mib/genericevents/GenericEvents;Ljava/lang/String;)V"
+      },
+      {
+        "name": "isAudioConnectionAvailable",
+        "descriptor": "()Z"
+      },
+      {
+        "name": "rqDummyAudioConnection",
+        "descriptor": "(Lde/vw/mib/asl/internal/media/common/ResponseHandler;)V"
+      },
+      {
+        "name": "rqMediaFadeIn",
+        "descriptor": "(Lde/vw/mib/asl/internal/media/common/ResponseHandler;)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/internal/media/sourcehandling/state/DeviceCollector",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "(Lde/vw/mib/asl/api/devicehandling/Device;)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/internal/media/sourcehandling/state/MediaCollector",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "(Lde/vw/mib/asl/api/devicehandling/Medium;Lde/vw/mib/asl/internal/media/sourcehandling/state/DeviceCollector;)V"
+      },
+      {
+        "name": "getMedium",
+        "descriptor": "()Lde/vw/mib/asl/api/devicehandling/Medium;"
+      },
+      {
+        "name": "createSourceState",
+        "descriptor": "(Lde/vw/mib/asl/api/devicehandling/Medium;)Lde/vw/mib/asl/api/media/services/sources/medialist/Source;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/internal/media/sourcehandling/target/ISources",
+    "members": [
+      {
+        "name": "getCollector",
+        "descriptor": "(Lde/vw/mib/asl/api/media/services/sources/SourceId;)Lde/vw/mib/asl/internal/media/sourcehandling/state/MediaCollector;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/internal/smartphoneintegration/common/DeviceASLExtended",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "getDsiDevice",
+        "descriptor": "()Lorg/dsi/ifc/smartphoneintegration/Device;"
+      },
+      {
+        "name": "isBlacklisted",
+        "descriptor": "()Z"
+      },
+      {
+        "name": "getDeviceAddress",
+        "descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "getDeviceName",
+        "descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "getConnectionMethod",
+        "descriptor": "()I"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/internal/smartphoneintegration/common/SmartPhoneIntegrationGlobalProperyAccessor",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "getInstance",
+        "descriptor": "()Lde/vw/mib/asl/internal/smartphoneintegration/common/SmartPhoneIntegrationGlobalProperyAccessor;"
+      },
+      {
+        "name": "getDsiDevicelistASLExtended",
+        "descriptor": "()[Lde/vw/mib/asl/internal/smartphoneintegration/common/DeviceASLExtended;"
+      },
+      {
+        "name": "getCurrentConnectedDevice",
+        "descriptor": "()Lde/vw/mib/asl/internal/smartphoneintegration/common/DeviceASLExtended;"
+      },
+      {
+        "name": "getCurrentConnectionState",
+        "descriptor": "()I"
+      },
+      {
+        "name": "getCurrentSelectedDevice",
+        "descriptor": "()Lde/vw/mib/asl/internal/smartphoneintegration/common/DeviceASLExtended;"
+      },
+      {
+        "name": "isInternalHFPorOCUCallActive",
+        "descriptor": "()Z"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/internal/smartphoneintegration/common/SmartPhoneIntegrationHelper",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "getTarget",
+        "descriptor": "()Lde/vw/mib/asl/internal/smartphoneintegration/target/HsmTarget;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/internal/smartphoneintegration/persistence/SmartPhoneIntegrationPersistence",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "(Lde/vw/mib/asl/internal/smartphoneintegration/target/HsmTarget;)V"
+      },
+      {
+        "name": "getVersion",
+        "descriptor": "()S"
+      },
+      {
+        "name": "getLastConnectedDevicesList",
+        "descriptor": "()[Lde/vw/mib/asl/internal/smartphoneintegration/common/DeviceASLExtended;"
+      },
+      {
+        "name": "getInitialConnectionType",
+        "descriptor": "()I"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/internal/smartphoneintegration/target/HsmTarget",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "(Lde/vw/mib/genericevents/GenericEvents;I)V"
+      },
+      {
+        "name": "getDSISmartphoneIntegration",
+        "descriptor": "()Lorg/dsi/ifc/smartphoneintegration/DSISmartphoneIntegration;"
+      },
+      {
+        "name": "getPersistence",
+        "descriptor": "()Lde/vw/mib/asl/internal/smartphoneintegration/persistence/SmartPhoneIntegrationPersistence;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/internal/system/AslTargetSystemKeyPanelHandling",
+    "members": [
+      {
+        "name": "UPDATE_GESTURE2_TIME_SCALE_FACTOR",
+        "descriptor": "I"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "(Lde/vw/mib/genericevents/GenericEvents;Ljava/lang/String;)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/asl/internal/system/abtfeatures/DsiKeyPanelListenerAdapter",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/cache/Cacheable",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/cio/CioActionParameters",
+    "members": [
+      {
+        "name": "getString",
+        "descriptor": "(Ljava/lang/String;)Ljava/lang/String;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/cio/CioExecutor",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/cio/CioIntent",
+    "members": [
+      {
+        "name": "getCioIntentId",
+        "descriptor": "()J"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/cio/CioIntentVisualizationImpl",
+    "members": [
+      {
+        "name": "DEFAULT",
+        "descriptor": "Lde/vw/mib/cio/framework/CioIntentVisualization;"
+      },
+      {
+        "name": "NOT_AVAILABLE",
+        "descriptor": "Lde/vw/mib/cio/framework/CioIntentVisualization;"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "([Lde/vw/mib/graphics/Color;[Lde/vw/mib/graphics/image/Image;[Lde/vw/mib/graphics/Color;[Lde/vw/mib/graphics/Color;Ljava/lang/String;[Lde/vw/mib/graphics/Color;[Lde/vw/mib/graphics/Color;)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/cio/ContentInformationObject",
+    "members": [
+      {
+        "name": "isRegistered",
+        "descriptor": "()Z"
+      },
+      {
+        "name": "unregister",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/cio/app/framework/AppFrameworkCioFactory",
+    "members": [
+      {
+        "name": "createAndRegisterCio",
+        "descriptor": "(Lde/vw/mib/cio/app/framework/CioIntentDefinition;Lde/vw/mib/cio/CioExecutor;)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/cio/app/framework/CioIntentDefinition",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/cio/framework/CioIdService",
+    "members": [
+      {
+        "name": "getCioVisualizationId",
+        "descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)J"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/cio/framework/CioIntentVisualization",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/cio/framework/CioVisualizationService",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/configuration/ConfigurationManager",
+    "members": [
+      {
+        "name": "getCurrentGuiLanguage",
+        "descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "getCurrentSkinId",
+        "descriptor": "()I"
+      },
+      {
+        "name": "getSkinBuildHmiSoftwareVersion",
+        "descriptor": "()Ljava/lang/String;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/configuration/internal/generated/ConfigurationManagerGenerated",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/coreapi/ASLDownEvent",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/datapool/ASLDatapool",
+    "members": [
+      {
+        "name": "getInteger",
+        "descriptor": "(I)I"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/datapool/ExtendedListItemControl",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/datapool/I18nDatapool",
+    "members": [
+      {
+        "name": "getString",
+        "descriptor": "(I)Ljava/lang/String;"
+      },
+      {
+        "name": "getStrings",
+        "descriptor": "(I)[Ljava/lang/String;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/datapool/LocalListItemControl",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "(I)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/desktop/DesktopDiagnosticsProviderService",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/desktop/DesktopManager",
+    "members": [
+      {
+        "name": "enterView",
+        "descriptor": "(Lde/vw/mib/app/framework/AppDefinition;Lde/vw/mib/desktop/ViewHandlerProvider;Ljava/lang/String;[Ljava/lang/String;ZI)V"
+      },
+      {
+        "name": "leaveView",
+        "descriptor": "(Ljava/lang/String;[Ljava/lang/String;IZ)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/desktop/ViewHandlerProvider",
+    "members": [
+      {
+        "name": "getViewHandler",
+        "descriptor": "(Ljava/lang/String;)Lde/vw/mib/viewmanager/internal/ViewHandler;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/desktop/internal/DesktopManagerImpl",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "(Lde/vw/mib/log4mib/LoggerFactory;)V"
+      },
+      {
+        "name": "getDominantViewHandlerOfScreenArea",
+        "descriptor": "(Ljava/lang/String;)Lde/vw/mib/desktop/internal/viewhandler/SmartViewHandler;"
+      },
+      {
+        "name": "enterView",
+        "descriptor": "(Lde/vw/mib/app/framework/AppDefinition;Lde/vw/mib/desktop/ViewHandlerProvider;Ljava/lang/String;[Ljava/lang/String;ZI)V"
+      },
+      {
+        "name": "leaveView",
+        "descriptor": "(Ljava/lang/String;[Ljava/lang/String;IZ)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/desktop/internal/common/ServiceManager",
+    "members": [
+      {
+        "name": "desktopManager",
+        "descriptor": "Lde/vw/mib/desktop/internal/DesktopManagerImpl;"
+      },
+      {
+        "name": "popupStackManager",
+        "descriptor": "Lde/vw/mib/desktop/internal/popup/PopupStackManager;"
+      },
+      {
+        "name": "eventDispatcher",
+        "descriptor": "Lde/vw/mib/event/dispatcher/FrameworkEventDispatcher;"
+      },
+      {
+        "name": "configurationManager",
+        "descriptor": "Lde/vw/mib/configuration/ConfigurationManager;"
+      },
+      {
+        "name": "skinClassLoader",
+        "descriptor": "Lde/vw/mib/skin/SkinClassLoader;"
+      },
+      {
+        "name": "screenAreaTree",
+        "descriptor": "Lde/vw/mib/desktop/internal/screenarea/ScreenTree;"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/desktop/internal/popup/PopupStackManager",
+    "members": [
+      {
+        "name": "getNameOfUpmostPopupViewHandler",
+        "descriptor": "()Ljava/lang/String;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/desktop/internal/screenarea/Node",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/desktop/internal/screenarea/ScreenAreaNode",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "(Ljava/lang/String;Lde/vw/mib/desktop/internal/screenarea/ViewNode;Z)V"
+      },
+      {
+        "name": "getScreenArea",
+        "descriptor": "()Lde/vw/mib/widgets/models/ScreenAreaModel;"
+      },
+      {
+        "name": "getChildren",
+        "descriptor": "()Ljava/util/List;"
+      },
+      {
+        "name": "isActive",
+        "descriptor": "()Z"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/desktop/internal/screenarea/ScreenTree",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "(Lde/vw/mib/desktop/internal/viewhandler/SmartViewHandler;)V"
+      },
+      {
+        "name": "getScreenAreaNode",
+        "descriptor": "(Ljava/lang/String;)Lde/vw/mib/desktop/internal/screenarea/ScreenAreaNode;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/desktop/internal/screenarea/ViewNode",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "(Lde/vw/mib/desktop/internal/viewhandler/SmartViewHandler;Lde/vw/mib/desktop/internal/screenarea/ScreenAreaNode;)V"
+      },
+      {
+        "name": "getViewHandler",
+        "descriptor": "()Lde/vw/mib/desktop/internal/viewhandler/SmartViewHandler;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/desktop/internal/viewhandler/CacheableViewHandler",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "(Lde/vw/mib/viewmanager/internal/ViewHandler;)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/desktop/internal/viewhandler/SmartViewHandler",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "(Lde/vw/mib/viewmanager/internal/ViewHandler;Ljava/lang/String;Lde/vw/mib/desktop/ViewHandlerProvider;)V"
+      },
+      {
+        "name": "getName",
+        "descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "getShortViewHandlerName",
+        "descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "getView",
+        "descriptor": "()Lde/vw/mib/widgets/models/ViewModel;"
+      },
+      {
+        "name": "getViewHandlerProvider",
+        "descriptor": "()Lde/vw/mib/desktop/ViewHandlerProvider;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/driverdistractionprevention/DriverDistractionPreventionHandler",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/event/Event",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/event/HMIEvent",
+    "members": [
+      {
+        "name": "getId",
+        "descriptor": "()I"
+      },
+      {
+        "name": "getType",
+        "descriptor": "()I"
+      },
+      {
+        "name": "isConsumed",
+        "descriptor": "()Z"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/event/RotationEvent",
+    "members": [
+      {
+        "name": "getTicks",
+        "descriptor": "()I"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/event/SystemEventIdMap",
+    "members": [
+      {
+        "name": "getInternalSystemEventId",
+        "descriptor": "(I)I"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/event/TouchEvent",
+    "members": [
+      {
+        "name": "PRESS",
+        "descriptor": "I"
+      },
+      {
+        "name": "CANCEL",
+        "descriptor": "I"
+      },
+      {
+        "name": "getTimestamp",
+        "descriptor": "()I"
+      },
+      {
+        "name": "getType",
+        "descriptor": "()I"
+      },
+      {
+        "name": "getX",
+        "descriptor": "()I"
+      },
+      {
+        "name": "getY",
+        "descriptor": "()I"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/event/consumer/GestureEventConsumer",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/event/consumer/ViewManagerEventConsumer",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/event/dispatcher/FrameworkEventDispatcher",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/event/internal/ServiceManager",
+    "members": [
+      {
+        "name": "systemEventIdMap",
+        "descriptor": "Lde/vw/mib/event/SystemEventIdMap;"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/extstartup/spi/ExtendedStartupSPI",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/extstartup/spi/StartupResumeListener",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/genericevents/AbstractTarget",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "getMainObject",
+        "descriptor": "()Lde/vw/mib/genericevents/GenericEvents;"
+      },
+      {
+        "name": "getTargetId",
+        "descriptor": "()I"
+      },
+      {
+        "name": "sendSafe",
+        "descriptor": "(Lde/vw/mib/genericevents/EventGeneric;)V"
+      },
+      {
+        "name": "isTraceEnabled",
+        "descriptor": "()Z"
+      },
+      {
+        "name": "trace",
+        "descriptor": "()Lde/vw/mib/log4mib/LogMessage;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/genericevents/EventDispatcherHSM",
+    "members": [
+      {
+        "name": "getTarget",
+        "descriptor": "(I)Lde/vw/mib/genericevents/Target;"
+      },
+      {
+        "name": "getTask",
+        "descriptor": "(Ljava/lang/String;)Lde/vw/mib/genericevents/TaskInterface;"
+      },
+      {
+        "name": "getTaskId",
+        "descriptor": "(I)Ljava/lang/String;"
+      },
+      {
+        "name": "registerTarget",
+        "descriptor": "(Lde/vw/mib/genericevents/Target;Ljava/lang/String;)I"
+      },
+      {
+        "name": "unregisterTarget",
+        "descriptor": "(I)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/genericevents/EventFactory",
+    "members": [
+      {
+        "name": "newEvent",
+        "descriptor": "(I)Lde/vw/mib/genericevents/EventGeneric;"
+      },
+      {
+        "name": "newEvent",
+        "descriptor": "(III)Lde/vw/mib/genericevents/EventGeneric;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/genericevents/EventGeneric",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "getInt",
+        "descriptor": "(I)I"
+      },
+      {
+        "name": "getReceiverEventId",
+        "descriptor": "()I"
+      },
+      {
+        "name": "setInt",
+        "descriptor": "(II)V"
+      },
+      {
+        "name": "toString",
+        "descriptor": "()Ljava/lang/String;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/genericevents/EventSender",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/genericevents/GenericEventException",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "(Ljava/lang/String;)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/genericevents/GenericEvents",
+    "members": [
+      {
+        "name": "getEventDispatcher",
+        "descriptor": "()Lde/vw/mib/genericevents/EventDispatcherHSM;"
+      },
+      {
+        "name": "getServiceRegister",
+        "descriptor": "()Lde/vw/mib/genericevents/ServiceRegister;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/genericevents/ServiceRegister",
+    "members": [
+      {
+        "name": "addObserver",
+        "descriptor": "(II)V"
+      },
+      {
+        "name": "removeObserver",
+        "descriptor": "(II)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/genericevents/Target",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/genericevents/TaskInterface",
+    "members": [
+      {
+        "name": "isInCurrentMIBThread",
+        "descriptor": "()Z"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/genericevents/ThreadSwitchingTarget",
+    "members": [
+      {
+        "name": "enqueue",
+        "descriptor": "(Ljava/lang/Runnable;)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/graphics/Color",
+    "members": [
+      {
+        "name": "WHITE",
+        "descriptor": "Lde/vw/mib/graphics/Color;"
+      },
+      {
+        "name": "DARK_GRAY",
+        "descriptor": "Lde/vw/mib/graphics/Color;"
+      },
+      {
+        "name": "BLACK",
+        "descriptor": "Lde/vw/mib/graphics/Color;"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "(I)V"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "(Lde/vw/mib/graphics/Color4b;)V"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "(Lde/vw/mib/graphics/Color4b;Lde/vw/mib/graphics/Color4b;Lde/vw/mib/graphics/Color4b;Lde/vw/mib/graphics/Color4b;Z)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/graphics/Color4b",
+    "members": [
+      {
+        "name": "WHITE",
+        "descriptor": "Lde/vw/mib/graphics/Color4b;"
+      },
+      {
+        "name": "DARK_GRAY",
+        "descriptor": "Lde/vw/mib/graphics/Color4b;"
+      },
+      {
+        "name": "BLACK",
+        "descriptor": "Lde/vw/mib/graphics/Color4b;"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "(III)V"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "(I)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/graphics/Insets",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "(IIII)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/graphics/ResourceManager",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/graphics/font/CursorChangedListener",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/graphics/font/Font",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/graphics/font/FontAttribs",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "(Ljava/lang/String;I)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/graphics/font/FontManager",
+    "members": [
+      {
+        "name": "getFontFromCurrentSkin",
+        "descriptor": "(Ljava/lang/String;)Lde/vw/mib/graphics/font/Font;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/graphics/image/Image",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "clone",
+        "descriptor": "()Ljava/lang/Object;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/hmi/internal/ServiceManagerCommon",
+    "members": [
+      {
+        "name": "i18nDatapool",
+        "descriptor": "Lde/vw/mib/datapool/I18nDatapool;"
+      },
+      {
+        "name": "skinAnimationPool",
+        "descriptor": "Lde/vw/mib/skin/SkinAnimationPool;"
+      },
+      {
+        "name": "skinImagePool",
+        "descriptor": "Lde/vw/mib/skin/SkinImagePool;"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/list/DynamicListData",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/list/DynamicListDataDebug",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/list/DynamicListDataRowItemTransformer",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/list/ListItemControl",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/list/ListItemControlListener",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/log4mib/LogMessage",
+    "members": [
+      {
+        "name": "append",
+        "descriptor": "(Ljava/lang/String;)Lde/vw/mib/log4mib/LogMessage;"
+      },
+      {
+        "name": "log",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/log4mib/Loggable",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/log4mib/LoggerFactory",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/pool/PooledObject",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/properties/values/LayoutAttribs",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "(IIIIIIII[I)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/properties/values/SpellerData",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "setAvailableCharacters",
+        "descriptor": "(Ljava/lang/String;)V"
+      },
+      {
+        "name": "setCursorPosition",
+        "descriptor": "(I)V"
+      },
+      {
+        "name": "setEnteredText",
+        "descriptor": "(Ljava/lang/String;)V"
+      },
+      {
+        "name": "setSelectionEnd",
+        "descriptor": "(I)V"
+      },
+      {
+        "name": "setSelectionStart",
+        "descriptor": "(I)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/reflection/MultipleMethodAccessibleObject",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "getIndex",
+        "descriptor": "(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Class;)I"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/repaint/Paintable",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/skin/SkinAnimationPool",
+    "members": [
+      {
+        "name": "getEasingParamsArray",
+        "descriptor": "(I)[Lde/vw/mib/animation/easing/EasingParams;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/skin/SkinClassLoader",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/skin/SkinImagePool",
+    "members": [
+      {
+        "name": "NONE",
+        "descriptor": "I"
+      },
+      {
+        "name": "getImage",
+        "descriptor": "(I)Lde/vw/mib/graphics/image/Image;"
+      },
+      {
+        "name": "getImageArray",
+        "descriptor": "(I)[Lde/vw/mib/graphics/image/Image;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/skin/ViewLanguageSkinChanger",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/threads/MIBInvoker",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/timer/Invoker",
+    "members": [
+      {
+        "name": "invoke",
+        "descriptor": "(Ljava/lang/Runnable;)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/timer/Timer",
+    "members": [
+      {
+        "name": "start",
+        "descriptor": "()V"
+      },
+      {
+        "name": "stop",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/timer/TimerManager",
+    "members": [
+      {
+        "name": "createTimer",
+        "descriptor": "(Ljava/lang/String;JZLjava/lang/Runnable;Lde/vw/mib/timer/Invoker;)Lde/vw/mib/timer/Timer;"
+      },
+      {
+        "name": "getSystemTimeMillis",
+        "descriptor": "()J"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/viewmanager/DesktopDiag",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/viewmanager/internal/ViewHandler",
+    "members": [
+      {
+        "name": "getView",
+        "descriptor": "()Lde/vw/mib/widgets/models/ViewModel;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/AbstractBackgroundContainer",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/AbstractButton",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "set_interactive",
+        "descriptor": "(Z)V"
+      },
+      {
+        "name": "set_imagesBackground",
+        "descriptor": "([Lde/vw/mib/graphics/image/Image;)V"
+      },
+      {
+        "name": "set_colorsBackground",
+        "descriptor": "([Lde/vw/mib/graphics/Color;)V"
+      },
+      {
+        "name": "get_imageBackgroundRef",
+        "descriptor": "()Lde/vw/mib/widgets/models/StaticImageModel;"
+      },
+      {
+        "name": "set_imageBackgroundRef",
+        "descriptor": "(Lde/vw/mib/widgets/models/StaticImageModel;)V"
+      },
+      {
+        "name": "set_easingStates",
+        "descriptor": "([Lde/vw/mib/animation/easing/EasingParams;)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/AbstractImage",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "set_color",
+        "descriptor": "(Lde/vw/mib/graphics/Color;)V"
+      },
+      {
+        "name": "set_colorEnabled",
+        "descriptor": "(Z)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/AbstractList",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "get_selectedIndex",
+        "descriptor": "()I"
+      },
+      {
+        "name": "get_cursorImageRef",
+        "descriptor": "()Lde/vw/mib/widgets/models/StaticImageModel;"
+      },
+      {
+        "name": "set_cursorImageRef",
+        "descriptor": "(Lde/vw/mib/widgets/models/StaticImageModel;)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/AbstractSlider",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "get_value",
+        "descriptor": "()I"
+      },
+      {
+        "name": "set_value",
+        "descriptor": "(I)V"
+      },
+      {
+        "name": "get_valueMax",
+        "descriptor": "()I"
+      },
+      {
+        "name": "set_valueMax",
+        "descriptor": "(I)V"
+      },
+      {
+        "name": "get_valueMin",
+        "descriptor": "()I"
+      },
+      {
+        "name": "set_valueMin",
+        "descriptor": "(I)V"
+      },
+      {
+        "name": "set_step",
+        "descriptor": "(I)V"
+      },
+      {
+        "name": "set_orientation",
+        "descriptor": "(I)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/AbstractSpeller",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "set_alphabetIndex",
+        "descriptor": "(I)V"
+      },
+      {
+        "name": "set_alphabetList",
+        "descriptor": "([Ljava/lang/String;)V"
+      },
+      {
+        "name": "set_charMax",
+        "descriptor": "(I)V"
+      },
+      {
+        "name": "set_charMin",
+        "descriptor": "(I)V"
+      },
+      {
+        "name": "set_languageList",
+        "descriptor": "([Ljava/lang/String;)V"
+      },
+      {
+        "name": "set_lowerUpper",
+        "descriptor": "(I)V"
+      },
+      {
+        "name": "set_mode",
+        "descriptor": "(I)V"
+      },
+      {
+        "name": "set_okEnabled",
+        "descriptor": "(Z)V"
+      },
+      {
+        "name": "set_spellerData",
+        "descriptor": "(Lde/vw/mib/properties/values/SpellerData;)V"
+      },
+      {
+        "name": "getWidgetCloneFactory",
+        "descriptor": "()Lde/vw/mib/widgets/interfaces/WidgetCloneFactory;"
+      },
+      {
+        "name": "setWidgetCloneFactory",
+        "descriptor": "(Lde/vw/mib/widgets/interfaces/WidgetCloneFactory;)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/AbstractTemplateList",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "deActivate",
+        "descriptor": "()V"
+      },
+      {
+        "name": "get_itemCount",
+        "descriptor": "()I"
+      },
+      {
+        "name": "get_firstItemIndex",
+        "descriptor": "()I"
+      },
+      {
+        "name": "get_firstItemIndexPosition",
+        "descriptor": "()I"
+      },
+      {
+        "name": "set_scrollTypeTouch",
+        "descriptor": "(I)V"
+      },
+      {
+        "name": "get_scrollTypeRotary",
+        "descriptor": "()I"
+      },
+      {
+        "name": "set_scrollTypeRotary",
+        "descriptor": "(I)V"
+      },
+      {
+        "name": "set_forwardPressDelay",
+        "descriptor": "(I)V"
+      },
+      {
+        "name": "setWidgetCloneFactory",
+        "descriptor": "(Lde/vw/mib/widgets/interfaces/WidgetCloneFactory;)V"
+      },
+      {
+        "name": "getWidgetCloneFactory",
+        "descriptor": "()Lde/vw/mib/widgets/interfaces/WidgetCloneFactory;"
+      },
+      {
+        "name": "getItem",
+        "descriptor": "(I)Lde/vw/mib/widgets/models/ListItemModel;"
+      },
+      {
+        "name": "getItemMaster",
+        "descriptor": "(I)Lde/vw/mib/widgets/models/ListItemModel;"
+      },
+      {
+        "name": "getItemIndex",
+        "descriptor": "(I)I"
+      },
+      {
+        "name": "getFirstVisibleIndex",
+        "descriptor": "()I"
+      },
+      {
+        "name": "getLastVisibleIndex",
+        "descriptor": "()I"
+      },
+      {
+        "name": "invalidateList",
+        "descriptor": "(I)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/AbstractText",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "set_colorBackground",
+        "descriptor": "(Lde/vw/mib/graphics/Color;)V"
+      },
+      {
+        "name": "set_colorForeground",
+        "descriptor": "(Lde/vw/mib/graphics/Color;)V"
+      },
+      {
+        "name": "set_font",
+        "descriptor": "(Lde/vw/mib/graphics/font/FontAttribs;)V"
+      },
+      {
+        "name": "set_fontStyles",
+        "descriptor": "([I)V"
+      },
+      {
+        "name": "set_lineSpacing",
+        "descriptor": "(I)V"
+      },
+      {
+        "name": "set_padding",
+        "descriptor": "(Lde/vw/mib/graphics/Insets;)V"
+      },
+      {
+        "name": "get_text",
+        "descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "set_text",
+        "descriptor": "(Ljava/lang/String;)V"
+      },
+      {
+        "name": "set_alignmentHorizontal",
+        "descriptor": "(I)V"
+      },
+      {
+        "name": "set_baselineOffset",
+        "descriptor": "(I)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/AbstractWidget",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "get_targetId",
+        "descriptor": "()I"
+      },
+      {
+        "name": "set_targetId",
+        "descriptor": "(I)V"
+      },
+      {
+        "name": "get_name",
+        "descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "set_name",
+        "descriptor": "(Ljava/lang/String;)V"
+      },
+      {
+        "name": "is_activated",
+        "descriptor": "()Z"
+      },
+      {
+        "name": "set_activated",
+        "descriptor": "(Z)V"
+      },
+      {
+        "name": "is_enabled",
+        "descriptor": "()Z"
+      },
+      {
+        "name": "set_enabled",
+        "descriptor": "(Z)V"
+      },
+      {
+        "name": "is_availableInVariant",
+        "descriptor": "()Z"
+      },
+      {
+        "name": "set_availableInVariant",
+        "descriptor": "(Z)V"
+      },
+      {
+        "name": "is_visible",
+        "descriptor": "()Z"
+      },
+      {
+        "name": "set_visible",
+        "descriptor": "(Z)V"
+      },
+      {
+        "name": "set_layoutable",
+        "descriptor": "(Z)V"
+      },
+      {
+        "name": "get_x",
+        "descriptor": "()I"
+      },
+      {
+        "name": "set_x",
+        "descriptor": "(I)V"
+      },
+      {
+        "name": "get_y",
+        "descriptor": "()I"
+      },
+      {
+        "name": "set_y",
+        "descriptor": "(I)V"
+      },
+      {
+        "name": "get_width",
+        "descriptor": "()I"
+      },
+      {
+        "name": "set_width",
+        "descriptor": "(I)V"
+      },
+      {
+        "name": "get_height",
+        "descriptor": "()I"
+      },
+      {
+        "name": "set_height",
+        "descriptor": "(I)V"
+      },
+      {
+        "name": "get_alpha",
+        "descriptor": "()I"
+      },
+      {
+        "name": "set_alpha",
+        "descriptor": "(I)V"
+      },
+      {
+        "name": "set_easing",
+        "descriptor": "([Lde/vw/mib/animation/easing/EasingParams;)V"
+      },
+      {
+        "name": "set_touchInsets",
+        "descriptor": "(Lde/vw/mib/graphics/Insets;)V"
+      },
+      {
+        "name": "getController",
+        "descriptor": "()Lde/vw/mib/widgets/controller/WidgetController;"
+      },
+      {
+        "name": "setController",
+        "descriptor": "(Lde/vw/mib/widgets/controller/WidgetController;)V"
+      },
+      {
+        "name": "setUI",
+        "descriptor": "(Lde/vw/mib/widgets/ui/WidgetUI;)V"
+      },
+      {
+        "name": "getParent",
+        "descriptor": "()Lde/vw/mib/widgets/models/WidgetModel;"
+      },
+      {
+        "name": "getView",
+        "descriptor": "()Lde/vw/mib/widgets/models/ViewModel;"
+      },
+      {
+        "name": "getAbsX",
+        "descriptor": "()I"
+      },
+      {
+        "name": "getAbsY",
+        "descriptor": "()I"
+      },
+      {
+        "name": "areParentsVisible",
+        "descriptor": "()Z"
+      },
+      {
+        "name": "invalidate",
+        "descriptor": "()V"
+      },
+      {
+        "name": "isPaintable",
+        "descriptor": "()Z"
+      },
+      {
+        "name": "repaint",
+        "descriptor": "()V"
+      },
+      {
+        "name": "consumeHMIEvent",
+        "descriptor": "(Lde/vw/mib/event/HMIEvent;Ljava/lang/String;)Z"
+      },
+      {
+        "name": "consumeTouchEvent",
+        "descriptor": "(Lde/vw/mib/event/TouchEvent;)Z"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/Button",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "set_textColors",
+        "descriptor": "([Lde/vw/mib/graphics/Color;)V"
+      },
+      {
+        "name": "set_textGlowColors",
+        "descriptor": "([Lde/vw/mib/graphics/Color;)V"
+      },
+      {
+        "name": "get_textAreaRefs",
+        "descriptor": "()[Lde/vw/mib/widgets/models/TextAreaModel;"
+      },
+      {
+        "name": "set_textAreaRefs",
+        "descriptor": "([Lde/vw/mib/widgets/models/TextAreaModel;)V"
+      },
+      {
+        "name": "set_buttonMode",
+        "descriptor": "(I)V"
+      },
+      {
+        "name": "set_imagesState",
+        "descriptor": "([Lde/vw/mib/graphics/image/Image;)V"
+      },
+      {
+        "name": "get_imageStateRef",
+        "descriptor": "()Lde/vw/mib/widgets/models/StaticImageModel;"
+      },
+      {
+        "name": "set_imageStateRef",
+        "descriptor": "(Lde/vw/mib/widgets/models/StaticImageModel;)V"
+      },
+      {
+        "name": "set_imageStateColors",
+        "descriptor": "([Lde/vw/mib/graphics/Color;)V"
+      },
+      {
+        "name": "set_startTimePrimary",
+        "descriptor": "(I)V"
+      },
+      {
+        "name": "set_repeatTimePrimary",
+        "descriptor": "(I)V"
+      },
+      {
+        "name": "set_startTimeSecondary",
+        "descriptor": "(I)V"
+      },
+      {
+        "name": "set_repeatTimeSecondary",
+        "descriptor": "(I)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/Container",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "init",
+        "descriptor": "(Lde/vw/mib/widgets/models/ViewModel;)V"
+      },
+      {
+        "name": "deInit",
+        "descriptor": "()V"
+      },
+      {
+        "name": "activate",
+        "descriptor": "()V"
+      },
+      {
+        "name": "deActivate",
+        "descriptor": "()V"
+      },
+      {
+        "name": "set_layoutAttribs",
+        "descriptor": "(Lde/vw/mib/properties/values/LayoutAttribs;)V"
+      },
+      {
+        "name": "getChildren",
+        "descriptor": "()[Lde/vw/mib/widgets/models/WidgetModel;"
+      },
+      {
+        "name": "setChildren",
+        "descriptor": "([Lde/vw/mib/widgets/models/WidgetModel;)V"
+      },
+      {
+        "name": "getChild",
+        "descriptor": "(I)Lde/vw/mib/widgets/models/WidgetModel;"
+      },
+      {
+        "name": "invalidate",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/DropDownButton",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/InputField",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "set_cursorImage",
+        "descriptor": "(Lde/vw/mib/graphics/image/Image;)V"
+      },
+      {
+        "name": "set_cursorOffset",
+        "descriptor": "(I)V"
+      },
+      {
+        "name": "set_colorHighlightForeground",
+        "descriptor": "(Lde/vw/mib/graphics/Color;)V"
+      },
+      {
+        "name": "set_colorHighlightBackground",
+        "descriptor": "(Lde/vw/mib/graphics/Color;)V"
+      },
+      {
+        "name": "set_colorMatchForeground",
+        "descriptor": "(Lde/vw/mib/graphics/Color;)V"
+      },
+      {
+        "name": "set_spellerRef",
+        "descriptor": "(Lde/vw/mib/widgets/models/AbstractSpellerModel;)V"
+      },
+      {
+        "name": "set_hideTyping",
+        "descriptor": "(Z)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/ListItem",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "set_activatedIndex",
+        "descriptor": "(I)V"
+      },
+      {
+        "name": "set_selectable",
+        "descriptor": "(Z)V"
+      },
+      {
+        "name": "set_cursorInsets",
+        "descriptor": "(Lde/vw/mib/graphics/Insets;)V"
+      },
+      {
+        "name": "set_limitation",
+        "descriptor": "(I)V"
+      },
+      {
+        "name": "set_selectedButtonRefs",
+        "descriptor": "([Lde/vw/mib/widgets/models/AbstractButtonModel;)V"
+      },
+      {
+        "name": "set_activatedButtonRefs",
+        "descriptor": "([Lde/vw/mib/widgets/models/AbstractButtonModel;)V"
+      },
+      {
+        "name": "getAbsoluteIndex",
+        "descriptor": "()I"
+      },
+      {
+        "name": "setListItemControl",
+        "descriptor": "(Lde/vw/mib/list/ListItemControl;)V"
+      },
+      {
+        "name": "isAssigned",
+        "descriptor": "()Z"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/Scrollbar",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "set_imagesScrollbar",
+        "descriptor": "([Lde/vw/mib/graphics/image/Image;)V"
+      },
+      {
+        "name": "set_colorsScrollbar",
+        "descriptor": "([Lde/vw/mib/graphics/Color;)V"
+      },
+      {
+        "name": "get_imageScrollbarRef",
+        "descriptor": "()Lde/vw/mib/widgets/models/StaticImageModel;"
+      },
+      {
+        "name": "set_imageScrollbarRef",
+        "descriptor": "(Lde/vw/mib/widgets/models/StaticImageModel;)V"
+      },
+      {
+        "name": "set_visibilityMode",
+        "descriptor": "(I)V"
+      },
+      {
+        "name": "set_adjustableWidgetRef",
+        "descriptor": "(Lde/vw/mib/widgets/interfaces/Adjustable;)V"
+      },
+      {
+        "name": "set_minScrollbarSize",
+        "descriptor": "(I)V"
+      },
+      {
+        "name": "set_stepValues",
+        "descriptor": "(I)V"
+      },
+      {
+        "name": "adjustmentValueChanged",
+        "descriptor": "(Lde/vw/mib/widgets/interfaces/Adjustable;I)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/SequencedImage",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "set_repeat",
+        "descriptor": "(Z)V"
+      },
+      {
+        "name": "set_sequenceImages",
+        "descriptor": "([Lde/vw/mib/graphics/image/Image;)V"
+      },
+      {
+        "name": "set_valueMax",
+        "descriptor": "(I)V"
+      },
+      {
+        "name": "set_valueMin",
+        "descriptor": "(I)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/Slider",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "set_imagesSlider",
+        "descriptor": "([Lde/vw/mib/graphics/image/Image;)V"
+      },
+      {
+        "name": "set_colorsSlider",
+        "descriptor": "([Lde/vw/mib/graphics/Color;)V"
+      },
+      {
+        "name": "set_imageSliderRef",
+        "descriptor": "(Lde/vw/mib/widgets/models/StaticImageModel;)V"
+      },
+      {
+        "name": "set_imagesProgress",
+        "descriptor": "([Lde/vw/mib/graphics/image/Image;)V"
+      },
+      {
+        "name": "set_colorsProgress",
+        "descriptor": "([Lde/vw/mib/graphics/Color;)V"
+      },
+      {
+        "name": "set_imageProgressRef",
+        "descriptor": "(Lde/vw/mib/widgets/models/StaticImageModel;)V"
+      },
+      {
+        "name": "set_imageProgressIndicatorRefs",
+        "descriptor": "([Lde/vw/mib/widgets/models/StaticImageModel;)V"
+      },
+      {
+        "name": "set_progressMode",
+        "descriptor": "(Z)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/Speller",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/SpellerButton",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "get_templateName",
+        "descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "set_templateName",
+        "descriptor": "(Ljava/lang/String;)V"
+      },
+      {
+        "name": "set_textFromAlphabetEnabled",
+        "descriptor": "(Z)V"
+      },
+      {
+        "name": "setCloneData",
+        "descriptor": "(Lde/vw/mib/widgets/interfaces/WidgetCloneData;)V"
+      },
+      {
+        "name": "getSpellerElement",
+        "descriptor": "()Lde/vw/mib/widgets/speller/SpellerElement;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/StaticImage",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "set_image",
+        "descriptor": "(Lde/vw/mib/graphics/image/Image;)V"
+      },
+      {
+        "name": "set_glowType",
+        "descriptor": "(I)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/TextArea",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "set_alignmentVertical",
+        "descriptor": "(I)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/TransformContainer",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "set_scalingX",
+        "descriptor": "(F)V"
+      },
+      {
+        "name": "set_scalingY",
+        "descriptor": "(F)V"
+      },
+      {
+        "name": "set_scalingZ",
+        "descriptor": "(F)V"
+      },
+      {
+        "name": "set_projectionNear",
+        "descriptor": "(F)V"
+      },
+      {
+        "name": "set_projectionFar",
+        "descriptor": "(F)V"
+      },
+      {
+        "name": "set_projectionFOV",
+        "descriptor": "(F)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/View",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "init",
+        "descriptor": "(Lde/vw/mib/widgets/models/ViewModel;)V"
+      },
+      {
+        "name": "deInit",
+        "descriptor": "()V"
+      },
+      {
+        "name": "activate",
+        "descriptor": "()V"
+      },
+      {
+        "name": "deActivate",
+        "descriptor": "()V"
+      },
+      {
+        "name": "set_colorBackground",
+        "descriptor": "(Lde/vw/mib/graphics/Color;)V"
+      },
+      {
+        "name": "set_viewTypes",
+        "descriptor": "([I)V"
+      },
+      {
+        "name": "addViewChangedListener",
+        "descriptor": "(Lde/vw/mib/widgets/event/ViewChangedListener;)V"
+      },
+      {
+        "name": "removeViewChangedListener",
+        "descriptor": "(Lde/vw/mib/widgets/event/ViewChangedListener;)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/WidgetList",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "init",
+        "descriptor": "(Lde/vw/mib/widgets/models/ViewModel;)V"
+      },
+      {
+        "name": "deInit",
+        "descriptor": "()V"
+      },
+      {
+        "name": "activate",
+        "descriptor": "()V"
+      },
+      {
+        "name": "set_padding",
+        "descriptor": "(Lde/vw/mib/graphics/Insets;)V"
+      },
+      {
+        "name": "set_orientation",
+        "descriptor": "(I)V"
+      },
+      {
+        "name": "set_spacingVertical",
+        "descriptor": "(I)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/animation/Animatable",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/controller/AbstractButtonController",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/controller/AbstractListController",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/controller/AbstractSliderController",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/controller/AbstractSpellerController",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/controller/AbstractTemplateListController",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/controller/AbstractWidgetController",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "addOutEventListener",
+        "descriptor": "(Lde/vw/mib/widgets/event/OutEventListener;)V"
+      },
+      {
+        "name": "removeOutEventListener",
+        "descriptor": "(Lde/vw/mib/widgets/event/OutEventListener;)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/controller/ButtonController",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/controller/DefaultDropDownButtonController",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/controller/DefaultListItemController",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/controller/DefaultPushButtonController",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/controller/DefaultScrollbarController",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/controller/DefaultSliderController",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/controller/DefaultSpellerController",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/controller/DefaultViewController",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "consumeTouchEvent",
+        "descriptor": "(Lde/vw/mib/event/TouchEvent;)Z"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/controller/DefaultWidgetListController",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/controller/DropDownButtonController",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/controller/ListController",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/controller/ListItemController",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/controller/PuckController",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/controller/PushButtonController",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/controller/ScrollbarController",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/controller/SliderController",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/controller/SpellerController",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/controller/TemplateListController",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/controller/ViewController",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/controller/WidgetController",
+    "members": [
+      {
+        "name": "addOutEventListener",
+        "descriptor": "(Lde/vw/mib/widgets/event/OutEventListener;)V"
+      },
+      {
+        "name": "removeOutEventListener",
+        "descriptor": "(Lde/vw/mib/widgets/event/OutEventListener;)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/controller/WidgetListController",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/event/AdjustmentListener",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/event/OutEventListener",
+    "members": [
+      {
+        "name": "outHMIEventFired",
+        "descriptor": "(Ljava/lang/String;)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/event/PropertyChangedListener",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/event/TouchDelegatable",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/event/ViewChangedListener",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/interfaces/Adjustable",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/interfaces/CompositeBackground",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/interfaces/Decoratable",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/interfaces/DecoratableUI",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/interfaces/Draggable",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/interfaces/Focusable",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/interfaces/FocusableUI",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/interfaces/Glowable",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/interfaces/WidgetCloneData",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/interfaces/WidgetCloneFactory",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/interfaces/WidgetCloneFactoryRegister",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/interfaces/WidgetCloneable",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/internal/ServiceManager",
+    "members": [
+      {
+        "name": "configurationManager",
+        "descriptor": "Lde/vw/mib/configuration/ConfigurationManager;"
+      },
+      {
+        "name": "fontManager",
+        "descriptor": "Lde/vw/mib/graphics/font/FontManager;"
+      },
+      {
+        "name": "timerManager",
+        "descriptor": "Lde/vw/mib/timer/TimerManager;"
+      },
+      {
+        "name": "bundleContext",
+        "descriptor": "Lorg/osgi/framework/BundleContext;"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/layout/Layoutable",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/list/ListValidationControl",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/log/Loggable",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/models/AbstractButtonModel",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/models/AbstractImageModel",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/models/AbstractSliderModel",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/models/AbstractSpellerModel",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/models/AbstractTextModel",
+    "members": [
+      {
+        "name": "set_text",
+        "descriptor": "(Ljava/lang/String;)V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/models/BackgroundContainerModel",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/models/ButtonModel",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/models/ContainerModel",
+    "members": [
+      {
+        "name": "getChildren",
+        "descriptor": "()[Lde/vw/mib/widgets/models/WidgetModel;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/models/DropDownButtonModel",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/models/InputFieldModel",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/models/ListItemModel",
+    "members": [
+      {
+        "name": "getAbsoluteIndex",
+        "descriptor": "()I"
+      },
+      {
+        "name": "isAssigned",
+        "descriptor": "()Z"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/models/ListModel",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/models/ScreenAreaModel",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/models/ScrollbarModel",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/models/SequencedImageModel",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/models/SliderModel",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/models/SpellerButtonModel",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/models/SpellerModel",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/models/StaticImageModel",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/models/TemplateListModel",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/models/TextAreaModel",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/models/TransformContainerModel",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/models/ViewModel",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/models/WidgetListModel",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/models/WidgetModel",
+    "members": [
+      {
+        "name": "get_name",
+        "descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "set_name",
+        "descriptor": "(Ljava/lang/String;)V"
+      },
+      {
+        "name": "is_activated",
+        "descriptor": "()Z"
+      },
+      {
+        "name": "is_enabled",
+        "descriptor": "()Z"
+      },
+      {
+        "name": "is_availableInVariant",
+        "descriptor": "()Z"
+      },
+      {
+        "name": "is_visible",
+        "descriptor": "()Z"
+      },
+      {
+        "name": "set_visible",
+        "descriptor": "(Z)V"
+      },
+      {
+        "name": "set_x",
+        "descriptor": "(I)V"
+      },
+      {
+        "name": "set_y",
+        "descriptor": "(I)V"
+      },
+      {
+        "name": "get_width",
+        "descriptor": "()I"
+      },
+      {
+        "name": "set_width",
+        "descriptor": "(I)V"
+      },
+      {
+        "name": "get_height",
+        "descriptor": "()I"
+      },
+      {
+        "name": "set_height",
+        "descriptor": "(I)V"
+      },
+      {
+        "name": "get_alpha",
+        "descriptor": "()I"
+      },
+      {
+        "name": "getParent",
+        "descriptor": "()Lde/vw/mib/widgets/models/WidgetModel;"
+      },
+      {
+        "name": "getAbsX",
+        "descriptor": "()I"
+      },
+      {
+        "name": "getAbsY",
+        "descriptor": "()I"
+      },
+      {
+        "name": "isPaintable",
+        "descriptor": "()Z"
+      },
+      {
+        "name": "invalidate",
+        "descriptor": "()V"
+      },
+      {
+        "name": "repaint",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/speller/PreviewLineChangedListener",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/speller/SpellerChangedListener",
+    "members": []
+  },
+  {
+    "name": "de/vw/mib/widgets/speller/SpellerElement",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "(IIIILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"
+      },
+      {
+        "name": "getId",
+        "descriptor": "()I"
+      },
+      {
+        "name": "getReturnValue",
+        "descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "getReturnFunction",
+        "descriptor": "()Ljava/lang/String;"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/ui/AbstractBackgroundContainerUI",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/ui/AbstractButtonUI",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/ui/AbstractImageUI",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/ui/AbstractSliderUI",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/ui/AbstractSpellerUI",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/ui/AbstractTemplateListUI",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/ui/AbstractTextUI",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/ui/AbstractWidgetUI",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/ui/ButtonUI",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/ui/ContainerUI",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/ui/DropDownButtonUI",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/ui/InputFieldUI",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/ui/ListItemUI",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/ui/ListUI",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/ui/ScrollbarUI",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/ui/SequencedImageUI",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/ui/SliderUI",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/ui/SpellerButtonUI",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/ui/SpellerUI",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/ui/StaticImageUI",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/ui/TextAreaUI",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/ui/TransformContainerUI",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/ui/ViewUI",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/ui/WidgetListUI",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "de/vw/mib/widgets/ui/WidgetUI",
+    "members": []
+  },
+  {
+    "name": "generated/de/vw/mib/asl/internal/ListManager",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      },
+      {
+        "name": "getGenericASLList",
+        "descriptor": "(I)Lde/vw/mib/asl/internal/list/impl/GenericASLList;"
+      }
+    ]
+  },
+  {
+    "name": "generated/de/vw/mib/asl/internal/homescreen/ASLHomeScreenServiceConstants",
+    "members": []
+  },
+  {
+    "name": "org/dsi/ifc/audio/DSIAudioManagement",
+    "members": [
+      {
+        "name": "getActiveEntertainmentConnection",
+        "descriptor": "(I)V"
+      },
+      {
+        "name": "getVolumelock",
+        "descriptor": "(II)V"
+      }
+    ]
+  },
+  {
+    "name": "org/dsi/ifc/audio/DSIAudioManagementListener",
+    "members": []
+  },
+  {
+    "name": "org/dsi/ifc/audio/DSISound",
+    "members": [
+      {
+        "name": "decreaseVolume",
+        "descriptor": "(IIS)V"
+      },
+      {
+        "name": "increaseVolume",
+        "descriptor": "(IIS)V"
+      }
+    ]
+  },
+  {
+    "name": "org/dsi/ifc/audio/DSISoundListener",
+    "members": []
+  },
+  {
+    "name": "org/dsi/ifc/base/DSIBase",
+    "members": [
+      {
+        "name": "setNotification",
+        "descriptor": "([ILorg/dsi/ifc/base/DSIListener;)V"
+      },
+      {
+        "name": "clearNotification",
+        "descriptor": "([ILorg/dsi/ifc/base/DSIListener;)V"
+      },
+      {
+        "name": "clearNotification",
+        "descriptor": "(Lorg/dsi/ifc/base/DSIListener;)V"
+      }
+    ]
+  },
+  {
+    "name": "org/dsi/ifc/base/DSIListener",
+    "members": []
+  },
+  {
+    "name": "org/dsi/ifc/bluetooth/DSIBluetooth",
+    "members": []
+  },
+  {
+    "name": "org/dsi/ifc/bluetooth/DSIBluetoothListener",
+    "members": []
+  },
+  {
+    "name": "org/dsi/ifc/bluetooth/DiscoveredDevice",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "org/dsi/ifc/bluetooth/MasterRoleRequestStruct",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "org/dsi/ifc/bluetooth/PasskeyStateStruct",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "org/dsi/ifc/bluetooth/ReconnectInfo",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "org/dsi/ifc/bluetooth/RequestIncomingService",
+    "members": [
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "org/dsi/ifc/bluetooth/ServiceRequestStateStruct",
+    "members": [
+      {
+        "name": "btServiceRequestState",
+        "descriptor": "I"
+      },
+      {
+        "name": "btDeviceAddress",
+        "descriptor": "Ljava/lang/String;"
+      },
+      {
+        "name": "btDeviceName",
+        "descriptor": "Ljava/lang/String;"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "org/dsi/ifc/bluetooth/TrustedDevice",
+    "members": [
+      {
+        "name": "deviceName",
+        "descriptor": "Ljava/lang/String;"
+      },
+      {
+        "name": "deviceAddress",
+        "descriptor": "Ljava/lang/String;"
+      },
+      {
+        "name": "activeServiceTypes",
+        "descriptor": "I"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "org/dsi/ifc/careco/RangeDataResidualEnergy",
+    "members": [
+      {
+        "name": "state",
+        "descriptor": "I"
+      },
+      {
+        "name": "value",
+        "descriptor": "F"
+      },
+      {
+        "name": "unit",
+        "descriptor": "I"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "org/dsi/ifc/carhybrid/BatteryControlChargeState",
+    "members": [
+      {
+        "name": "chargeMode",
+        "descriptor": "I"
+      },
+      {
+        "name": "chargeState",
+        "descriptor": "I"
+      },
+      {
+        "name": "currentChargeLevel",
+        "descriptor": "I"
+      },
+      {
+        "name": "remainingChargeTime",
+        "descriptor": "I"
+      },
+      {
+        "name": "targetSOC",
+        "descriptor": "I"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "org/dsi/ifc/carhybrid/BatteryControlPlug",
+    "members": [
+      {
+        "name": "plugState",
+        "descriptor": "I"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "org/dsi/ifc/carhybrid/BatteryControlRemainingChargeTime",
+    "members": [
+      {
+        "name": "mode",
+        "descriptor": "B"
+      },
+      {
+        "name": "targetSOC",
+        "descriptor": "S"
+      },
+      {
+        "name": "chargeTime",
+        "descriptor": "I"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "org/dsi/ifc/carkombi/BCConfiguration",
+    "members": [
+      {
+        "name": "primaryEngineType",
+        "descriptor": "I"
+      },
+      {
+        "name": "secondaryEngineType",
+        "descriptor": "I"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "org/dsi/ifc/carkombi/BCTankLevel",
+    "members": [
+      {
+        "name": "state",
+        "descriptor": "I"
+      },
+      {
+        "name": "tankLevelValue",
+        "descriptor": "I"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "org/dsi/ifc/carkombi/BCViewOptions",
+    "members": [
+      {
+        "name": "configuration",
+        "descriptor": "Lorg/dsi/ifc/carkombi/BCConfiguration;"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "org/dsi/ifc/carlight/DSICarLight",
+    "members": [
+      {
+        "name": "setExtLightComingHome",
+        "descriptor": "(Lorg/dsi/ifc/carlight/TimeState;)V"
+      }
+    ]
+  },
+  {
+    "name": "org/dsi/ifc/carlight/ExtLightViewOptions",
+    "members": [
+      {
+        "name": "comingHome",
+        "descriptor": "Lorg/dsi/ifc/global/CarViewOption;"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "org/dsi/ifc/carlight/TimeState",
+    "members": [
+      {
+        "name": "time",
+        "descriptor": "I"
+      },
+      {
+        "name": "state",
+        "descriptor": "Z"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "(IZ)V"
+      }
+    ]
+  },
+  {
+    "name": "org/dsi/ifc/displaymanagement/DSIDisplayManagement",
+    "members": [
+      {
+        "name": "switchContext",
+        "descriptor": "(III)V"
+      },
+      {
+        "name": "setOpacity",
+        "descriptor": "(III)V"
+      },
+      {
+        "name": "setCropping",
+        "descriptor": "(IIIIIIIIII)V"
+      }
+    ]
+  },
+  {
+    "name": "org/dsi/ifc/generalvehiclestates/TankInfo",
+    "members": [
+      {
+        "name": "fuelWarning",
+        "descriptor": "Z"
+      },
+      {
+        "name": "fuelWarningSecondary",
+        "descriptor": "Z"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "org/dsi/ifc/global/CarBCCurrentRange",
+    "members": [
+      {
+        "name": "state",
+        "descriptor": "I"
+      },
+      {
+        "name": "currentRangeValue",
+        "descriptor": "I"
+      },
+      {
+        "name": "currentRangeUnit",
+        "descriptor": "I"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "org/dsi/ifc/global/CarBCDistance",
+    "members": [
+      {
+        "name": "distanceValueState",
+        "descriptor": "I"
+      },
+      {
+        "name": "distanceValue",
+        "descriptor": "D"
+      },
+      {
+        "name": "distanceUnit",
+        "descriptor": "I"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "org/dsi/ifc/global/CarBCTemperature",
+    "members": [
+      {
+        "name": "state",
+        "descriptor": "I"
+      },
+      {
+        "name": "temperatureValue",
+        "descriptor": "F"
+      },
+      {
+        "name": "temperatureUnit",
+        "descriptor": "I"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "org/dsi/ifc/global/CarViewOption",
+    "members": [
+      {
+        "name": "state",
+        "descriptor": "I"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "org/dsi/ifc/keypanel/DSIKeyPanel",
+    "members": []
+  },
+  {
+    "name": "org/dsi/ifc/keypanel/DSIKeyPanelListener",
+    "members": []
+  },
+  {
+    "name": "org/dsi/ifc/kombisync/DSIKombiSyncListener",
+    "members": []
+  },
+  {
+    "name": "org/dsi/ifc/kombisync/KombiDisplayRequest",
+    "members": [
+      {
+        "name": "tid",
+        "descriptor": "I"
+      },
+      {
+        "name": "focus",
+        "descriptor": "I"
+      },
+      {
+        "name": "screenFormat",
+        "descriptor": "I"
+      },
+      {
+        "name": "mainContext",
+        "descriptor": "I"
+      },
+      {
+        "name": "menuContext",
+        "descriptor": "Lorg/dsi/ifc/kombisync/MenuContext;"
+      },
+      {
+        "name": "popupContext",
+        "descriptor": "I"
+      },
+      {
+        "name": "animationScreenType",
+        "descriptor": "I"
+      },
+      {
+        "name": "animationScreenSubType",
+        "descriptor": "I"
+      },
+      {
+        "name": "animationLeadTime",
+        "descriptor": "I"
+      },
+      {
+        "name": "animationAddInfo",
+        "descriptor": "I"
+      },
+      {
+        "name": "lastmoderequest",
+        "descriptor": "Z"
+      },
+      {
+        "name": "lvdslock",
+        "descriptor": "Z"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "org/dsi/ifc/kombisync/KombiDisplayStatus",
+    "members": [
+      {
+        "name": "tid",
+        "descriptor": "I"
+      },
+      {
+        "name": "focus",
+        "descriptor": "I"
+      },
+      {
+        "name": "screenFormat",
+        "descriptor": "I"
+      },
+      {
+        "name": "mainContext",
+        "descriptor": "I"
+      },
+      {
+        "name": "menuContext",
+        "descriptor": "Lorg/dsi/ifc/kombisync/MenuContext;"
+      },
+      {
+        "name": "popupContext",
+        "descriptor": "I"
+      },
+      {
+        "name": "animationScreenType",
+        "descriptor": "I"
+      },
+      {
+        "name": "animationScreenSubType",
+        "descriptor": "I"
+      },
+      {
+        "name": "animationLeadTime",
+        "descriptor": "I"
+      },
+      {
+        "name": "animationAddInfo",
+        "descriptor": "I"
+      },
+      {
+        "name": "animationSpeed",
+        "descriptor": "I"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "org/dsi/ifc/kombisync/MenuContext",
+    "members": [
+      {
+        "name": "leftSideMenuOpen",
+        "descriptor": "Z"
+      },
+      {
+        "name": "rightSideMenuOpen",
+        "descriptor": "Z"
+      },
+      {
+        "name": "partialPopupOpen",
+        "descriptor": "Z"
+      },
+      {
+        "name": "secondStatusLine",
+        "descriptor": "Z"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "org/dsi/ifc/kombisync2/DisplayStatus",
+    "members": [
+      {
+        "name": "internalState",
+        "descriptor": "I"
+      },
+      {
+        "name": "mainContext",
+        "descriptor": "I"
+      },
+      {
+        "name": "statusFlags",
+        "descriptor": "Lorg/dsi/ifc/kombisync2/DisplayStatusFlags;"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "org/dsi/ifc/kombisync2/DisplayStatusFlags",
+    "members": [
+      {
+        "name": "statusFlags",
+        "descriptor": "I"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "org/dsi/ifc/komogfxstreamsink/DSIKOMOGfxStreamSink",
+    "members": []
+  },
+  {
+    "name": "org/dsi/ifc/komogfxstreamsink/DSIKOMOGfxStreamSinkListener",
+    "members": []
+  },
+  {
+    "name": "org/dsi/ifc/media/AudioRoute",
+    "members": [
+      {
+        "name": "routingInput",
+        "descriptor": "I"
+      },
+      {
+        "name": "routingOutput",
+        "descriptor": "I"
+      },
+      {
+        "name": "routeStatus",
+        "descriptor": "I"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "(III)V"
+      }
+    ]
+  },
+  {
+    "name": "org/dsi/ifc/media/DSIMediaRouter",
+    "members": [
+      {
+        "name": "setAudioRoutes",
+        "descriptor": "([Lorg/dsi/ifc/media/AudioRoute;)V"
+      }
+    ]
+  },
+  {
+    "name": "org/dsi/ifc/media/DSIMediaRouterListener",
+    "members": []
+  },
+  {
+    "name": "org/dsi/ifc/powermanagement/DSIPowerManagement",
+    "members": [
+      {
+        "name": "rebootSystem",
+        "descriptor": "()V"
+      }
+    ]
+  },
+  {
+    "name": "org/dsi/ifc/smartphoneintegration/DSISmartphoneIntegration",
+    "members": [
+      {
+        "name": "connectDevice",
+        "descriptor": "(II)V"
+      },
+      {
+        "name": "disconnectDevice",
+        "descriptor": "(I)V"
+      }
+    ]
+  },
+  {
+    "name": "org/dsi/ifc/smartphoneintegration/DSISmartphoneIntegrationListener",
+    "members": []
+  },
+  {
+    "name": "org/dsi/ifc/smartphoneintegration/Device",
+    "members": [
+      {
+        "name": "deviceID",
+        "descriptor": "I"
+      },
+      {
+        "name": "deviceName",
+        "descriptor": "Ljava/lang/String;"
+      },
+      {
+        "name": "connectionType",
+        "descriptor": "I"
+      },
+      {
+        "name": "deviceAddress",
+        "descriptor": "Ljava/lang/String;"
+      },
+      {
+        "name": "connectionMethod",
+        "descriptor": "I"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "(ILjava/lang/String;ILjava/lang/String;I)V"
+      },
+      {
+        "name": "getDeviceID",
+        "descriptor": "()I"
+      },
+      {
+        "name": "getDeviceAddress",
+        "descriptor": "()Ljava/lang/String;"
+      },
+      {
+        "name": "getConnectionMethod",
+        "descriptor": "()I"
+      }
+    ]
+  },
+  {
+    "name": "org/osgi/framework/Bundle",
+    "members": [
+      {
+        "name": "INSTALLED",
+        "descriptor": "I"
+      },
+      {
+        "name": "STARTING",
+        "descriptor": "I"
+      },
+      {
+        "name": "ACTIVE",
+        "descriptor": "I"
+      },
+      {
+        "name": "getState",
+        "descriptor": "()I"
+      },
+      {
+        "name": "getBundleId",
+        "descriptor": "()J"
+      }
+    ]
+  },
+  {
+    "name": "org/osgi/framework/BundleContext",
+    "members": [
+      {
+        "name": "getBundles",
+        "descriptor": "()[Lorg/osgi/framework/Bundle;"
+      },
+      {
+        "name": "addBundleListener",
+        "descriptor": "(Lorg/osgi/framework/BundleListener;)V"
+      },
+      {
+        "name": "removeBundleListener",
+        "descriptor": "(Lorg/osgi/framework/BundleListener;)V"
+      },
+      {
+        "name": "getServiceReference",
+        "descriptor": "(Ljava/lang/String;)Lorg/osgi/framework/ServiceReference;"
+      },
+      {
+        "name": "getService",
+        "descriptor": "(Lorg/osgi/framework/ServiceReference;)Ljava/lang/Object;"
+      },
+      {
+        "name": "ungetService",
+        "descriptor": "(Lorg/osgi/framework/ServiceReference;)Z"
+      }
+    ]
+  },
+  {
+    "name": "org/osgi/framework/BundleEvent",
+    "members": [
+      {
+        "name": "INSTALLED",
+        "descriptor": "I"
+      },
+      {
+        "name": "<init>",
+        "descriptor": "(ILorg/osgi/framework/Bundle;)V"
+      },
+      {
+        "name": "getBundle",
+        "descriptor": "()Lorg/osgi/framework/Bundle;"
+      },
+      {
+        "name": "getType",
+        "descriptor": "()I"
+      }
+    ]
+  },
+  {
+    "name": "org/osgi/framework/BundleListener",
+    "members": []
+  },
+  {
+    "name": "org/osgi/framework/ServiceReference",
+    "members": []
+  },
+  {
+    "name": "org/osgi/util/tracker/ServiceTrackerCustomizer",
+    "members": []
+  }
+]

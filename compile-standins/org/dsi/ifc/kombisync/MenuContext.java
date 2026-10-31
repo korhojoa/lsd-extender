@@ -1,0 +1,11 @@
+/* Copyright (C) 2026 korhojoa */
+// SPDX-License-Identifier: GPL-3.0-only
+// Compile-only declaration. Do not install this class.
+package org.dsi.ifc.kombisync;
+public class MenuContext {
+ public boolean leftSideMenuOpen = false;
+ public boolean rightSideMenuOpen = false;
+ public boolean partialPopupOpen = false;
+ public boolean secondStatusLine = false;
+ public MenuContext() { super(); throw new UnsupportedOperationException(); }
+}

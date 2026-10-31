@@ -1,0 +1,86 @@
+[
+  {
+    "feature": "aa-guidance",
+    "version": "2.0.1+422",
+    "source": "13061ed5d576480ade6aa104d9e0a834327ce150",
+    "jar": "lsd-extender-aa-guidance.jar",
+    "expected_sha256": "e65f8044af9a86de36c2b4d06b3373a397714fa07134ca9538b8e26c9bc0075a"
+  },
+  {
+    "feature": "aasettings",
+    "version": "1.0.2+422",
+    "source": "13061ed5d576480ade6aa104d9e0a834327ce150",
+    "jar": "lsd-extender-aasettings.jar",
+    "expected_sha256": "289d7530dcb8bfbcb8e056083b7cdf1cfa44abc30f59ffb7c4d24ea106d3ba67"
+  },
+  {
+    "feature": "audio",
+    "version": "1.0.0+422",
+    "source": "13061ed5d576480ade6aa104d9e0a834327ce150",
+    "jar": "lsd-extender-audio.jar",
+    "expected_sha256": "814d2b934f798ff98d8c4158b9759daa67b1734e59ca4938037065ac2ab76bf7"
+  },
+  {
+    "feature": "dsispy",
+    "version": "1.3.1+472",
+    "source": "e7969e39014020de6b4fbebaf0e23d3a090e9248",
+    "jar": "lsd-extender-dsispy.jar",
+    "expected_sha256": "453df07503f59f2081773f9b8907d4546e0bbba9145cdd04fb783611985a31ba"
+  },
+  {
+    "feature": "ev",
+    "version": "1.0.1+422",
+    "source": "13061ed5d576480ade6aa104d9e0a834327ce150",
+    "jar": "lsd-extender-ev.jar",
+    "expected_sha256": "e64929ffe3c569e3e890c079ccc96396700c59cb099348e3b257eeaf70c62b10"
+  },
+  {
+    "feature": "homeui",
+    "version": "2.9.6+529",
+    "source": "885bd8fd20ac36767a3cf9fa6e966323dc87ce1b",
+    "jar": "lsd-extender-homeui.jar",
+    "expected_sha256": "517e82eaeb58b98ef46e7f0db5a4515aa93bd802dce0d654efc949a34fbdb159"
+  },
+  {
+    "feature": "keys",
+    "version": "2.2.8+422",
+    "source": "13061ed5d576480ade6aa104d9e0a834327ce150",
+    "jar": "lsd-extender-keys.jar",
+    "expected_sha256": "9bdb0f19ec39524f65a7194b8c0695bc5013330eb4403f04004ef4a7c43d28b3"
+  },
+  {
+    "feature": "kombisync",
+    "version": "1.1.0+422",
+    "source": "13061ed5d576480ade6aa104d9e0a834327ce150",
+    "jar": "lsd-extender-kombisync.jar",
+    "expected_sha256": "33dae08035a329948e7ee634d2ad874df224cd43040111bf2bc16493f328ac83"
+  },
+  {
+    "feature": "native-destination",
+    "version": "1.0.0+422",
+    "source": "13061ed5d576480ade6aa104d9e0a834327ce150",
+    "jar": "lsd-extender-native-destination.jar",
+    "expected_sha256": "ec783b25dc01f6a2d5d1e707696e16d8a343c18773c17b1ee13dd35fc0672503"
+  },
+  {
+    "feature": "vehicle-probe",
+    "version": "1.1.0+422",
+    "source": "13061ed5d576480ade6aa104d9e0a834327ce150",
+    "jar": "lsd-extender-vehicle-probe.jar",
+    "expected_sha256": "cc239b37c380a030c41feb44d16c58c9c3de2e9d738e8d36240d668b00e419c7"
+  },
+  {
+    "feature": "wirelessaa",
+    "version": "2.0.2+522",
+    "source": "9363d47264208747363ad0991dfec61bb0bfb9b5",
+    "jar": "lsd-extender-wirelessaa.jar",
+    "expected_sha256": "df54c2fce77b04f1e914955568578a0a1db8f622452a7d3080ff68bcfee7a056"
+  },
+  {
+    "feature": "core",
+    "version": "2.3.2+522",
+    "source": "9363d47264208747363ad0991dfec61bb0bfb9b5",
+    "jar": "lsd-extender.jar",
+    "expected_sha256": "5d37eff003eef0c2c003be272e192ab0de18b5ce304618bb1cac1b356199156a"
+  }
+]
